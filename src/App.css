@@ -1,0 +1,83 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #343a40;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-center h2 {
+  margin-top: 50px;
+  color: #6c757d;
+}
+
+/* Custom Hamburger Icon */
+.custom-toggler {
+  border-color: transparent;
+  outline: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  width: 25px;
+  height: 25px;
+  background-image: none;
+  position: relative;
+}
+
+.custom-toggler .navbar-toggler-icon:before,
+.custom-toggler .navbar-toggler-icon:after,
+.custom-toggler .navbar-toggler-icon div {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-toggler .navbar-toggler-icon div {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-toggler .navbar-toggler-icon:before {
+  top: 0;
+}
+
+.custom-toggler .navbar-toggler-icon:after {
+  bottom: 0;
+}
+
+/* Add animation when toggling */
+.navbar-toggler.collapsed .navbar-toggler-icon div {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon:before {
+  transform: rotate(-45deg) translateY(10px);
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon:after {
+  transform: rotate(-45deg) translateY(-10px);
+}

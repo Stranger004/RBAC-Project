@@ -1,0 +1,54 @@
+/* Container Styling */
+.role-management-container {
+    padding: 15px;
+  }
+  
+  .role-management-heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Responsive Table */
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  .table td,
+  .table th {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .table td {
+    font-size: 0.9rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 576px) {
+    .role-management-heading {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+  
+    .table td,
+    .table th {
+      font-size: 0.8rem;
+    }
+  
+    .action-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    button {
+      margin-bottom: 5px;
+    }
+  }
+  
